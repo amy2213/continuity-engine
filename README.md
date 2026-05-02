@@ -8,6 +8,7 @@ A rule-based narrative analysis prototype implementing the Mid-Process Identity 
 **Status:** Research prototype. Internal consistency verified. Human validation pending.  
 **License:** MIT
 
+https://amy2213.github.io/continuity-engine/#theory
 ---
 
 ## What This Is
