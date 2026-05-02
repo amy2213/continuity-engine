@@ -1,0 +1,138 @@
+{
+  "correct": 20,
+  "total": 20,
+  "accuracy": 1.0,
+  "accuracy_by_state": [
+    {
+      "state": "Flexible",
+      "correct": 3,
+      "total": 3,
+      "accuracy": 1.0
+    },
+    {
+      "state": "Integrated",
+      "correct": 0,
+      "total": 0,
+      "accuracy": 0
+    },
+    {
+      "state": "Defensive",
+      "correct": 0,
+      "total": 0,
+      "accuracy": 0
+    },
+    {
+      "state": "Rigid",
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    },
+    {
+      "state": "Fragmented",
+      "correct": 2,
+      "total": 2,
+      "accuracy": 1.0
+    },
+    {
+      "state": "Overloaded",
+      "correct": 0,
+      "total": 0,
+      "accuracy": 0
+    },
+    {
+      "state": "Stable/Neutral",
+      "correct": 4,
+      "total": 4,
+      "accuracy": 1.0
+    },
+    {
+      "state": "Mixed / Review Needed",
+      "correct": 10,
+      "total": 10,
+      "accuracy": 1.0
+    }
+  ],
+  "confusion_matrix": {
+    "Flexible": {
+      "Flexible": 3,
+      "Integrated": 0,
+      "Defensive": 0,
+      "Rigid": 0,
+      "Fragmented": 0,
+      "Overloaded": 0,
+      "Stable/Neutral": 0,
+      "Mixed / Review Needed": 0
+    },
+    "Integrated": {
+      "Flexible": 0,
+      "Integrated": 0,
+      "Defensive": 0,
+      "Rigid": 0,
+      "Fragmented": 0,
+      "Overloaded": 0,
+      "Stable/Neutral": 0,
+      "Mixed / Review Needed": 0
+    },
+    "Defensive": {
+      "Flexible": 0,
+      "Integrated": 0,
+      "Defensive": 0,
+      "Rigid": 0,
+      "Fragmented": 0,
+      "Overloaded": 0,
+      "Stable/Neutral": 0,
+      "Mixed / Review Needed": 0
+    },
+    "Rigid": {
+      "Flexible": 0,
+      "Integrated": 0,
+      "Defensive": 0,
+      "Rigid": 1,
+      "Fragmented": 0,
+      "Overloaded": 0,
+      "Stable/Neutral": 0,
+      "Mixed / Review Needed": 0
+    },
+    "Fragmented": {
+      "Flexible": 0,
+      "Integrated": 0,
+      "Defensive": 0,
+      "Rigid": 0,
+      "Fragmented": 2,
+      "Overloaded": 0,
+      "Stable/Neutral": 0,
+      "Mixed / Review Needed": 0
+    },
+    "Overloaded": {
+      "Flexible": 0,
+      "Integrated": 0,
+      "Defensive": 0,
+      "Rigid": 0,
+      "Fragmented": 0,
+      "Overloaded": 0,
+      "Stable/Neutral": 0,
+      "Mixed / Review Needed": 0
+    },
+    "Stable/Neutral": {
+      "Flexible": 0,
+      "Integrated": 0,
+      "Defensive": 0,
+      "Rigid": 0,
+      "Fragmented": 0,
+      "Overloaded": 0,
+      "Stable/Neutral": 4,
+      "Mixed / Review Needed": 0
+    },
+    "Mixed / Review Needed": {
+      "Flexible": 0,
+      "Integrated": 0,
+      "Defensive": 0,
+      "Rigid": 0,
+      "Fragmented": 0,
+      "Overloaded": 0,
+      "Stable/Neutral": 0,
+      "Mixed / Review Needed": 10
+    }
+  },
+  "failure_taxonomy": {}
+}

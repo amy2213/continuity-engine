@@ -1,0 +1,246 @@
+{
+  "dataset_name": "continuity_engine_unlabeled_rater_packet_v1",
+  "random_seed": 2213,
+  "samples": [
+    {
+      "sample_id": "S-001",
+      "text": "I was frustrated when the plan changed, but I could see why the change was needed. I still think communication could have been better, but I adjusted and found a way to work with it."
+    },
+    {
+      "sample_id": "S-002",
+      "text": "I do not care how they interpreted it. I know what I meant, and that should be enough."
+    },
+    {
+      "sample_id": "S-003",
+      "text": "I reacted strongly because I was trying to protect myself, but I can see now that the feedback was not an attack. I can use it without making it mean I am unsafe."
+    },
+    {
+      "sample_id": "S-004",
+      "text": "Everything is falling apart. I cannot think clearly, and I do not know what I am supposed to do next. It feels like one more thing will break me."
+    },
+    {
+      "sample_id": "S-005",
+      "text": "I know the situation is not dangerous, but my body still reacts like it is. I can name the pattern, but I have not figured out how to believe the safer version yet."
+    },
+    {
+      "sample_id": "S-006",
+      "text": "That experience changed me, but it did not erase me. I can see how the old version of me survived the best way she knew how, and I can choose differently now."
+    },
+    {
+      "sample_id": "S-007",
+      "text": "I am tired of trying to make sense of it. Nothing fits. I do not know who I am in this anymore."
+    },
+    {
+      "sample_id": "S-008",
+      "text": "The data proves they are incompetent, and everyone who disagrees is either lying or too stupid to understand the report."
+    },
+    {
+      "sample_id": "S-009",
+      "text": "The weather delayed the site visit by one hour. The revised schedule was sent to the group, and the inspection was moved to the afternoon."
+    },
+    {
+      "sample_id": "S-010",
+      "text": "The meeting was uncomfortable, and I did not love how my idea was challenged. Still, I can see that the questions helped me clarify the weak spots."
+    },
+    {
+      "sample_id": "S-011",
+      "text": "I trust her, but I also know she will eventually leave. I do not want to push her away, but I keep testing whether she means what she says."
+    },
+    {
+      "sample_id": "S-012",
+      "text": "I know the data supports my conclusion, but I can also tell I am enjoying being right a little too much. That makes me question whether I am using the facts cleanly."
+    },
+    {
+      "sample_id": "S-013",
+      "text": "Nothing ever works out when I trust people. I should know better by now."
+    },
+    {
+      "sample_id": "S-014",
+      "text": "I do not care what they think, except I cannot stop replaying every word. It does not matter, but it also feels like it matters too much."
+    },
+    {
+      "sample_id": "S-015",
+      "text": "The application was submitted on Tuesday. The confirmation email arrived later that afternoon, and the supporting documents were uploaded to the shared folder."
+    },
+    {
+      "sample_id": "S-016",
+      "text": "I know I am safe, but my body does not believe it. I want to calm down, but part of me is still waiting for something bad to happen."
+    },
+    {
+      "sample_id": "S-017",
+      "text": "I used to believe that failure meant I was not capable. Now I can see it as information. It still hurts, but it no longer defines me."
+    },
+    {
+      "sample_id": "S-018",
+      "text": "I want to believe the compliment, but part of me is already collecting reasons it cannot be true."
+    },
+    {
+      "sample_id": "S-019",
+      "text": "The policy requires the form to be signed before reimbursement can be processed. If the signature is missing, the request must be returned for correction."
+    },
+    {
+      "sample_id": "S-020",
+      "text": "I am not the same person I was before this, but I can see the thread. I did not lose myself. I revised myself."
+    },
+    {
+      "sample_id": "S-021",
+      "text": "I can see why they were upset, and I also think they misunderstood part of what I meant. I am not ready to decide whether this is a repair conversation or a boundary conversation."
+    },
+    {
+      "sample_id": "S-022",
+      "text": "This always happens to me. No matter what I do, people overlook my work. I am just the kind of person no one takes seriously."
+    },
+    {
+      "sample_id": "S-023",
+      "text": "They were unfair in how they said it, but part of the message may still be true. I do not know yet whether I am rejecting the tone or avoiding the point."
+    },
+    {
+      "sample_id": "S-024",
+      "text": "They only criticized the project because they do not understand what I was trying to do. I know the work was good, and I am not going to waste time pretending their opinion matters."
+    },
+    {
+      "sample_id": "S-025",
+      "text": "The meeting started at 9:00 a.m. The report was reviewed by the team. Two formatting errors were identified, and the final version was submitted before noon."
+    },
+    {
+      "sample_id": "S-026",
+      "text": "She tells herself she is over it, but she still plans every conversation around not being left out again."
+    },
+    {
+      "sample_id": "S-027",
+      "text": "Part of me wants help. Another part thinks needing help means I failed. I cannot tell which part is telling the truth."
+    },
+    {
+      "sample_id": "S-028",
+      "text": "It is too much. I cannot explain it, fix it, or organize it. I feel like I am disappearing inside the noise."
+    },
+    {
+      "sample_id": "S-029",
+      "text": "I am proud of myself, but I also feel like a fraud. I know I earned this, but I keep waiting for someone to realize I should not be here."
+    },
+    {
+      "sample_id": "S-030",
+      "text": "Three files were missing from the packet. The checklist was updated, and the missing files were requested from the program contact."
+    },
+    {
+      "sample_id": "S-031",
+      "text": "The team reviewed the dashboard and identified three duplicate entries. The duplicate records were removed, and the cleaned file was saved in the archive."
+    },
+    {
+      "sample_id": "S-032",
+      "text": "I disagree with their conclusion because the data does not support it, but I do agree that the chart labels could be clearer. I can fix that part without accepting the whole criticism."
+    },
+    {
+      "sample_id": "S-033",
+      "text": "Maybe I could have said it differently, but they caused the problem by overreacting. I am tired of being blamed for other people being too sensitive."
+    },
+    {
+      "sample_id": "S-034",
+      "text": "Someone like her learns early not to expect much. She keeps showing up, but she already knows the room has made its decision before she walks in."
+    },
+    {
+      "sample_id": "S-035",
+      "text": "I never get these things right. I have always been bad at this, and there is no point pretending I can change now."
+    },
+    {
+      "sample_id": "S-036",
+      "text": "I misunderstood her silence as rejection because that is the story I was used to telling myself. Now I can see there were other explanations, and I do not have to keep living from the old one."
+    },
+    {
+      "sample_id": "S-037",
+      "text": "The feedback was useless. They just wanted to make me look bad, and I do not need to consider advice from people who clearly do not get it."
+    },
+    {
+      "sample_id": "S-038",
+      "text": "I can understand why I reacted the way I did, and I can also see why it did not help. Both things are true, and that gives me a better place to start."
+    },
+    {
+      "sample_id": "S-039",
+      "text": "I am fine. Completely fine. Nothing says stability like checking the same message forty times and pretending my jaw is not locked."
+    },
+    {
+      "sample_id": "S-040",
+      "text": "I am not being reactive. They are just wrong. If they had listened in the first place, none of this would be happening."
+    },
+    {
+      "sample_id": "S-041",
+      "text": "At first I thought the feedback was unfair. After sitting with it, I realized part of it was useful and part of it did not apply. I can take what helps and leave the rest."
+    },
+    {
+      "sample_id": "S-042",
+      "text": "People like me do not get picked for opportunities like that. I already knew how it would end before it started."
+    },
+    {
+      "sample_id": "S-043",
+      "text": "The criticism means I am failing. I cannot stop thinking about it, and now every message feels like another sign that I am about to lose everything."
+    },
+    {
+      "sample_id": "S-044",
+      "text": "I cannot process any of this. Every option feels wrong, and every decision feels like a trap. I just want everything to stop."
+    },
+    {
+      "sample_id": "S-045",
+      "text": "It failed because I always mess up. Even when I try to fix things, I end up proving the same thing about myself."
+    },
+    {
+      "sample_id": "S-046",
+      "text": "They said I was avoiding the question, but that is ridiculous. I answered what mattered, and the rest was just them trying to trap me."
+    },
+    {
+      "sample_id": "S-047",
+      "text": "Everyone keeps acting like I should change my approach, but they are missing the point. I already know what happened, and nothing they say changes that."
+    },
+    {
+      "sample_id": "S-048",
+      "text": "I keep trying to make a plan, but every next step turns into five more problems. I cannot get a clean thought to stay still long enough to use it."
+    },
+    {
+      "sample_id": "S-049",
+      "text": "I ruin every good thing. That is just who I am. I can try to dress it up, but the pattern never changes."
+    },
+    {
+      "sample_id": "S-050",
+      "text": "I do not accept the way he spoke to me. Calling me lazy was not feedback, and I can take responsibility for missing the deadline without accepting disrespect."
+    },
+    {
+      "sample_id": "S-051",
+      "text": "My chest is tight, my thoughts are racing, and I keep jumping from one disaster to the next. I cannot find the thread."
+    },
+    {
+      "sample_id": "S-052",
+      "text": "I am fine. I mean, probably. I keep saying I am fine because it is easier than explaining why I am not sure what I feel."
+    },
+    {
+      "sample_id": "S-053",
+      "text": "For a long time I thought needing help meant I had failed. Now I understand that asking for help is part of staying honest with myself, not proof that I am weak."
+    },
+    {
+      "sample_id": "S-054",
+      "text": "A person like that does not really change. They may learn new words for the pattern, but the pattern stays the same."
+    },
+    {
+      "sample_id": "S-055",
+      "text": "Some of the criticism was fair, and some of it came from missing context. I can correct the mistake without turning the whole thing into proof that I failed."
+    },
+    {
+      "sample_id": "S-056",
+      "text": "I thought she was dismissing me, but I may have misread her tone. I want to ask a clearer question before deciding what it meant."
+    },
+    {
+      "sample_id": "S-057",
+      "text": "I was wrong about part of what happened. Admitting that does not mean I was worthless or stupid. It means I have a more accurate story now."
+    },
+    {
+      "sample_id": "S-058",
+      "text": "I think I handled it well, but maybe I also avoided the hardest part. I am not sure whether that means I was being strategic or just scared."
+    },
+    {
+      "sample_id": "S-059",
+      "text": "Someone like him does not ask for help easily. Maybe that is wisdom, or maybe it is just fear wearing a better coat."
+    },
+    {
+      "sample_id": "S-060",
+      "text": "I made the decision because at the time we had limited information. Looking back, I would document the assumptions more clearly, but I do not think the original choice was reckless."
+    }
+  ]
+}

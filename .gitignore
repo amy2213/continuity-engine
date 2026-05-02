@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+*.key
+secrets.json
+credentials.json
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+
+# Internal answer keys / master keys (do not publish)
+outputs/master_key_internal.csv
+outputs/master_key_internal.json
+outputs/*master*key*
+
+# Local / private rater completed CSVs
+outputs/rater_*_completed.csv
+outputs/*_completed_*.csv
+outputs/private_*

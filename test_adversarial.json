@@ -1,0 +1,28 @@
+{
+  "dataset_name": "continuity_engine_adversarial_v1",
+  "version": "1.0",
+  "framework": "Mid-Process Identity Loop",
+  "purpose": "Adversarial and edge-case tests. These are NOT training samples. They test known failure modes, boundary conditions, and false-positive risks.",
+  "samples": [
+    {"sample_id":"ADV-001","text":"I realized I am broken and nothing will ever change.","expected_loop_state":"Mixed / Review Needed","notes":"Growth marker (I realized) paired with strong fixity content. Growth is suspect."},
+    {"sample_id":"ADV-002","text":"Sure, I learned so much from their brilliant feedback.","expected_loop_state":"Mixed / Review Needed","notes":"Sarcasm marker co-occurs with growth marker. Growth is ironic."},
+    {"sample_id":"ADV-003","text":"I am not sure whether to trust this.","expected_loop_state":"Flexible","notes":"Genuine uncertainty, not sarcasm. Should not trigger sarcasm markers."},
+    {"sample_id":"ADV-004","text":"The policy always requires review. We never skip documentation.","expected_loop_state":"Stable/Neutral","notes":"Policy language with always/never. No identity content."},
+    {"sample_id":"ADV-005","text":"I can see the thread.","expected_loop_state":"Mixed / Review Needed","notes":"Minimal integration marker, insufficient context for Integrated."},
+    {"sample_id":"ADV-006","text":"I learned they are just wrong about everything.","expected_loop_state":"Mixed / Review Needed","notes":"Growth language paired with dismissal. Collision rule should fire."},
+    {"sample_id":"ADV-007","text":"The data shows an error, but that does not make anyone incompetent.","expected_loop_state":"Stable/Neutral","notes":"Clean evidence-based reasoning but no first-person identity content. Stable/Neutral is defensible."},
+    {"sample_id":"ADV-008","text":"I used to think I always fail.","expected_loop_state":"Flexible","notes":"Quoted old belief without explicit revision. Borderline case. Flexibility marker present."},
+    {"sample_id":"ADV-009","text":"We always fail to deliver on time.","expected_loop_state":"Stable/Neutral","notes":"Team-level fixity language. No personal self-model."},
+    {"sample_id":"ADV-010","text":"I know I am safe, but I still cannot make myself move.","expected_loop_state":"Fragmented","notes":"Body-mind split with agency difficulty. Fragmented, not Overloaded (no full collapse)."},
+    {"sample_id":"ADV-011","text":"I never realized anything. I did not learn. I was not wrong.","expected_loop_state":"Mixed / Review Needed","notes":"Negated growth language. Should not trigger feedback integration."},
+    {"sample_id":"ADV-012","text":"Oh sure, I totally learned my lesson. What a growth experience that was. I am so grateful.","expected_loop_state":"Mixed / Review Needed","notes":"Heavy sarcasm with growth vocabulary. Should not classify as Flexible or Integrated."},
+    {"sample_id":"ADV-013","text":"She keeps showing up. She already knows. She tells herself it will be different.","expected_loop_state":"Rigid","notes":"Third-person distancing with fixed expectation."},
+    {"sample_id":"ADV-014","text":"The building is unsafe. The road is dangerous. There is a trap in the floor.","expected_loop_state":"Mixed / Review Needed","notes":"Literal threat language with no identity content. Should not classify as Overloaded."},
+    {"sample_id":"ADV-015","text":"OK.","expected_loop_state":"Stable/Neutral","notes":"Minimal text. Should be neutral."},
+    {"sample_id":"ADV-016","text":"I realized I always fail. I learned that nothing ever changes. I can see now that I am broken.","expected_loop_state":"Mixed / Review Needed","notes":"Growth framing applied to entirely rigid content. Collision should fire."},
+    {"sample_id":"ADV-017","text":"The team always reviews the documentation. I never skip the checklist. We always follow the protocol.","expected_loop_state":"Mixed / Review Needed","notes":"Policy language but 'I never' triggers fixity marker. Mixed is defensible. Known false-positive boundary."},
+    {"sample_id":"ADV-018","text":"I do not accept that. That is not acceptable. That was not feedback.","expected_loop_state":"Mixed / Review Needed","notes":"Boundary language without accountability or evidence. Not neutral — boundary/rejection is present. Not Defensive — no external blame. Mixed is honest."},
+    {"sample_id":"ADV-019","text":"I want to believe the compliment, but part of me thinks they are just saying it to be nice. I keep waiting for the real version.","expected_loop_state":"Fragmented","notes":"Competing self-models with no resolution."},
+    {"sample_id":"ADV-020","text":"I agree with the decision and I understand the reasoning. I can also see how it could have gone differently. No strong feelings either way.","expected_loop_state":"Flexible","notes":"Balanced, non-extreme flexibility. Should not be Integrated (no identity revision)."}
+  ]
+}
