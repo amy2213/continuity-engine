@@ -81,8 +81,15 @@ continuity-engine/
 │   ├── narrative_analysis_rubric_v1.md
 │   └── revision_latency_v0_2.md
 ├── tests/                        # Unit and regression tests
-└── outputs/                      # Generated verification results, rater packets
+├── outputs/                      # Generated verification results, rater packets
+└── docs/                         # Documentation site files (index.html, loop-diagram.png)
 ```
+
+---
+
+## Documentation Site Files
+
+Static documentation lives in [`docs/`](docs/). It contains `index.html` and a `loop-diagram.png` illustrating the Mid-Process Identity Loop. These files can be served as a GitHub Pages site (Settings → Pages → branch `main`, folder `/docs`).
 
 ---
 
