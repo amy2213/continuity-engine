@@ -162,6 +162,24 @@ nav .nav-links a:hover { color: var(--gold); }
   background: linear-gradient(90deg, transparent, var(--border), transparent);
 }
 
+.research-status {
+  margin: 3rem 0 0; padding: 1.4rem 1.6rem;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold-dim);
+  background: var(--bg-surface);
+  border-radius: 2px;
+}
+.research-status p {
+  margin: 0; color: var(--text);
+  font-size: 0.98rem; line-height: 1.65;
+}
+.research-status .rs-label {
+  font-family: var(--font-mono);
+  text-transform: uppercase; letter-spacing: 0.14em;
+  font-size: 0.78rem; color: var(--gold);
+  margin-right: 0.5rem;
+}
+
 /* Block quote */
 blockquote {
   margin: 2rem 0; padding: 1rem 1.5rem;
@@ -381,6 +399,11 @@ footer .footer-meta a { color: var(--gold-dim); }
 </header>
 
 <main class="content">
+
+  <!-- RESEARCH STATUS -->
+  <aside class="research-status" role="note" aria-label="Research status">
+    <p><span class="rs-label">Research status:</span>This is an original conceptual framework with a rule-based prototype. Current results show internal consistency and regression stability only. Human inter-rater validation and held-out evaluation are pending.</p>
+  </aside>
 
   <!-- ABSTRACT -->
   <section class="section" id="abstract">
