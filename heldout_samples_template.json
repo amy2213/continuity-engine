@@ -1,0 +1,31 @@
+{
+  "dataset_name": "continuity_engine_heldout_template_v0_1",
+  "description": "Template for future held-out samples not used during rule development.",
+  "status": "template_only_not_validation_data",
+  "instructions": [
+    "Do not tune classifier rules against this file once populated.",
+    "Use anonymized or consented text only.",
+    "Record source type and whether text was synthetic or real-world.",
+    "Expected labels should be assigned by human raters before classifier comparison."
+  ],
+  "samples": [
+    {
+      "sample_id": "HOLDOUT-001",
+      "text": "",
+      "source_type": "",
+      "synthetic_or_real": "",
+      "human_primary_state": "",
+      "human_dimension_scores": {
+        "SR": null,
+        "IF": null,
+        "PR": null,
+        "TH": null,
+        "FI": null,
+        "NF": null,
+        "FR": null,
+        "UC": null
+      },
+      "notes": ""
+    }
+  ]
+}

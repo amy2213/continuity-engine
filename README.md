@@ -171,6 +171,8 @@ The adversarial test set (20 samples) achieves 100% accuracy against documented 
 
 For planned validation work, see [Research Agenda](RESEARCH_AGENDA.md).
 
+A held-out sample template is included for future validation design, but it does not contain validation data.
+
 ---
 
 ## Limitations
