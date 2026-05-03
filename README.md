@@ -169,6 +169,8 @@ The adversarial test set (20 samples) achieves 100% accuracy against documented 
 
 **Next required steps:** Inter-rater reliability study with 3+ independent raters. Held-out evaluation on text not used during development. Cross-domain testing.
 
+For planned validation work, see [Research Agenda](RESEARCH_AGENDA.md).
+
 ---
 
 ## Limitations
