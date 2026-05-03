@@ -184,6 +184,8 @@ The adversarial test set (20 samples) achieves 100% accuracy against documented 
 | Not diagnostic            | Labels describe text patterns, not people                     |
 | Unpublished theory        | Mid-Process Identity Loop is an original, unvalidated framework |
 
+For detailed edge cases, see [Known Failure Modes](KNOWN_FAILURE_MODES.md).
+
 ---
 
 ## Ethics and Usage Policy
