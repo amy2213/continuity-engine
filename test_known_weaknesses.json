@@ -1,0 +1,91 @@
+{
+  "dataset_name": "continuity_engine_known_weaknesses_v0_1",
+  "description": "Exploratory stress cases for likely rule-based classifier weaknesses. This is not a validation dataset and should not be used to tune rules without separate review.",
+  "status": "exploratory_not_validation",
+  "samples": [
+    {
+      "sample_id": "KW-NEG-001",
+      "text": "I am not saying they are incompetent. I am saying the data does not support their conclusion.",
+      "expected_loop_state": "Flexible",
+      "risk_type": "negation",
+      "notes": "Negated contempt phrase should not be treated as weaponized evidence."
+    },
+    {
+      "sample_id": "KW-QUOTE-001",
+      "text": "She told me, 'you are broken,' but I know that does not define me.",
+      "expected_loop_state": "Integrated",
+      "risk_type": "quoted_speech",
+      "notes": "Quoted fixity belongs to another speaker and is revised by the narrator."
+    },
+    {
+      "sample_id": "KW-FICTION-001",
+      "text": "The character says she is fine, but the narrator shows she is not.",
+      "expected_loop_state": "Mixed / Review Needed",
+      "risk_type": "fiction_third_person",
+      "notes": "Fictional narration should not be confidently treated as self-report."
+    },
+    {
+      "sample_id": "KW-TRANSCRIPT-001",
+      "text": "Q: Did you accept the feedback? A: I said I understood it, but I also said they were wrong about the facts.",
+      "expected_loop_state": "Mixed / Review Needed",
+      "risk_type": "multi_speaker_transcript",
+      "notes": "Dialogue structure complicates speaker attribution."
+    },
+    {
+      "sample_id": "KW-SARCASM-001",
+      "text": "I learned an incredible amount from being blamed for everything again.",
+      "expected_loop_state": "Mixed / Review Needed",
+      "risk_type": "sarcasm_without_marker",
+      "notes": "Sarcasm is implied but lacks obvious sarcasm markers."
+    },
+    {
+      "sample_id": "KW-LONG-001",
+      "text": "At first I thought this proved I always ruin everything. Then I reread the notes and realized some of the feedback was fair. I still do not know what to do with the rest of it.",
+      "expected_loop_state": "Mixed / Review Needed",
+      "risk_type": "multi_state_long_text",
+      "notes": "Longer text contains rigid, flexible, and unresolved signals."
+    },
+    {
+      "sample_id": "KW-EVIDENCE-CLEAN-001",
+      "text": "The data does not support that conclusion, but part of the feedback was useful and I can correct the chart labels.",
+      "expected_loop_state": "Flexible",
+      "risk_type": "clean_evidence_language",
+      "notes": "Evidence-based rejection paired with partial integration should remain flexible."
+    },
+    {
+      "sample_id": "KW-EVIDENCE-AGGRO-001",
+      "text": "The data proves they are incompetent and anyone who disagrees is too stupid to understand the model.",
+      "expected_loop_state": "Defensive",
+      "risk_type": "weaponized_evidence",
+      "notes": "Evidence language is used as contempt and dominance."
+    },
+    {
+      "sample_id": "KW-BOUNDARY-LOWCONTEXT-001",
+      "text": "I do not accept that. That was not feedback.",
+      "expected_loop_state": "Mixed / Review Needed",
+      "risk_type": "boundary_without_context",
+      "notes": "Boundary language without accountability or evidence should remain ambiguous."
+    },
+    {
+      "sample_id": "KW-BOUNDARY-ACCOUNTABLE-001",
+      "text": "I do not accept being insulted, but I can take responsibility for missing the deadline.",
+      "expected_loop_state": "Flexible",
+      "risk_type": "boundary_with_accountability",
+      "notes": "Boundary plus accountability should remain flexible."
+    },
+    {
+      "sample_id": "KW-BODY-001",
+      "text": "My chest is tight and my jaw is locked, but I know this is a body reaction and not proof that I am unsafe.",
+      "expected_loop_state": "Fragmented",
+      "risk_type": "bodily_distress_without_collapse",
+      "notes": "Bodily distress with cognitive counterframing may split between body and interpretation."
+    },
+    {
+      "sample_id": "KW-ADMIN-001",
+      "text": "The employee was rejected by the system because the form was incomplete.",
+      "expected_loop_state": "Stable/Neutral",
+      "risk_type": "administrative_loaded_terms",
+      "notes": "Administrative use of emotionally loaded terms should not imply identity threat."
+    }
+  ]
+}

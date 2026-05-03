@@ -1,0 +1,355 @@
+{
+  "dataset_name": "continuity_engine_known_weaknesses_v0_1",
+  "status": "exploratory_not_validation",
+  "accuracy_is_not_asserted": true,
+  "results": [
+    {
+      "sample_id": "KW-NEG-001",
+      "risk_type": "negation",
+      "expected_loop_state": "Flexible",
+      "predicted_loop_state": "Defensive",
+      "confidence": "High",
+      "matches_expected": false,
+      "explanation": "Evidence language is paired with global blame or contempt.",
+      "scores": {
+        "self_reference": 1,
+        "identity_fixity": 0,
+        "prediction": 0,
+        "threat": 0,
+        "feedback_integration": 0,
+        "narrative_flexibility": 0,
+        "fragmentation": 0,
+        "integration": 0
+      },
+      "indexes": {
+        "rigidity_index": 0,
+        "integration_index": 0,
+        "threat_prediction_index": 0,
+        "threat_prediction_with_body": 0,
+        "revision_capacity_score": 0,
+        "fragmentation_load": 0,
+        "discernment_index": -1
+      },
+      "notes": "Negated contempt phrase should not be treated as weaponized evidence."
+    },
+    {
+      "sample_id": "KW-QUOTE-001",
+      "risk_type": "quoted_speech",
+      "expected_loop_state": "Integrated",
+      "predicted_loop_state": "Mixed / Review Needed",
+      "confidence": "Low",
+      "matches_expected": false,
+      "explanation": "Signals are mixed or insufficient for confident classification.",
+      "scores": {
+        "self_reference": 2,
+        "identity_fixity": 0,
+        "prediction": 0,
+        "threat": 0,
+        "feedback_integration": 0,
+        "narrative_flexibility": 0,
+        "fragmentation": 0,
+        "integration": 2
+      },
+      "indexes": {
+        "rigidity_index": 0,
+        "integration_index": 2,
+        "threat_prediction_index": 0,
+        "threat_prediction_with_body": 0,
+        "revision_capacity_score": 2,
+        "fragmentation_load": 0,
+        "discernment_index": 0
+      },
+      "notes": "Quoted fixity belongs to another speaker and is revised by the narrator."
+    },
+    {
+      "sample_id": "KW-FICTION-001",
+      "risk_type": "fiction_third_person",
+      "expected_loop_state": "Mixed / Review Needed",
+      "predicted_loop_state": "Stable/Neutral",
+      "confidence": "Medium",
+      "matches_expected": false,
+      "explanation": "Objective or administrative text with no self-model activity.",
+      "scores": {
+        "self_reference": 0,
+        "identity_fixity": 0,
+        "prediction": 0,
+        "threat": 0,
+        "feedback_integration": 0,
+        "narrative_flexibility": 0,
+        "fragmentation": 0,
+        "integration": 0
+      },
+      "indexes": {
+        "rigidity_index": 0,
+        "integration_index": 0,
+        "threat_prediction_index": 0,
+        "threat_prediction_with_body": 0,
+        "revision_capacity_score": 0,
+        "fragmentation_load": 0,
+        "discernment_index": 0
+      },
+      "notes": "Fictional narration should not be confidently treated as self-report."
+    },
+    {
+      "sample_id": "KW-TRANSCRIPT-001",
+      "risk_type": "multi_speaker_transcript",
+      "expected_loop_state": "Mixed / Review Needed",
+      "predicted_loop_state": "Defensive",
+      "confidence": "High",
+      "matches_expected": false,
+      "explanation": "External blame or defensive hinge dominates.",
+      "scores": {
+        "self_reference": 1,
+        "identity_fixity": 0,
+        "prediction": 0,
+        "threat": 0,
+        "feedback_integration": 0,
+        "narrative_flexibility": 1,
+        "fragmentation": 0,
+        "integration": 0
+      },
+      "indexes": {
+        "rigidity_index": -1,
+        "integration_index": 1,
+        "threat_prediction_index": 0,
+        "threat_prediction_with_body": 0,
+        "revision_capacity_score": 1,
+        "fragmentation_load": 0,
+        "discernment_index": 1
+      },
+      "notes": "Dialogue structure complicates speaker attribution."
+    },
+    {
+      "sample_id": "KW-SARCASM-001",
+      "risk_type": "sarcasm_without_marker",
+      "expected_loop_state": "Mixed / Review Needed",
+      "predicted_loop_state": "Flexible",
+      "confidence": "Medium",
+      "matches_expected": false,
+      "explanation": "Adaptive flexibility without explicit identity revision.",
+      "scores": {
+        "self_reference": 1,
+        "identity_fixity": 0,
+        "prediction": 0,
+        "threat": 0,
+        "feedback_integration": 1,
+        "narrative_flexibility": 0,
+        "fragmentation": 0,
+        "integration": 0
+      },
+      "indexes": {
+        "rigidity_index": 0,
+        "integration_index": 1,
+        "threat_prediction_index": 0,
+        "threat_prediction_with_body": 0,
+        "revision_capacity_score": 1,
+        "fragmentation_load": 0,
+        "discernment_index": 0
+      },
+      "notes": "Sarcasm is implied but lacks obvious sarcasm markers."
+    },
+    {
+      "sample_id": "KW-LONG-001",
+      "risk_type": "multi_state_long_text",
+      "expected_loop_state": "Mixed / Review Needed",
+      "predicted_loop_state": "Mixed / Review Needed",
+      "confidence": "Low",
+      "matches_expected": true,
+      "explanation": "Signals are mixed or insufficient for confident classification.",
+      "scores": {
+        "self_reference": 1,
+        "identity_fixity": 1,
+        "prediction": 0,
+        "threat": 0,
+        "feedback_integration": 0,
+        "narrative_flexibility": 0,
+        "fragmentation": 0,
+        "integration": 0
+      },
+      "indexes": {
+        "rigidity_index": 1,
+        "integration_index": 0,
+        "threat_prediction_index": 0,
+        "threat_prediction_with_body": 0,
+        "revision_capacity_score": -1,
+        "fragmentation_load": 0,
+        "discernment_index": 1
+      },
+      "notes": "Longer text contains rigid, flexible, and unresolved signals."
+    },
+    {
+      "sample_id": "KW-EVIDENCE-CLEAN-001",
+      "risk_type": "clean_evidence_language",
+      "expected_loop_state": "Flexible",
+      "predicted_loop_state": "Flexible",
+      "confidence": "Medium",
+      "matches_expected": true,
+      "explanation": "Adaptive flexibility without explicit identity revision.",
+      "scores": {
+        "self_reference": 1,
+        "identity_fixity": 0,
+        "prediction": 0,
+        "threat": 0,
+        "feedback_integration": 1,
+        "narrative_flexibility": 0,
+        "fragmentation": 0,
+        "integration": 0
+      },
+      "indexes": {
+        "rigidity_index": 0,
+        "integration_index": 1,
+        "threat_prediction_index": 0,
+        "threat_prediction_with_body": 0,
+        "revision_capacity_score": 1,
+        "fragmentation_load": 0,
+        "discernment_index": 2
+      },
+      "notes": "Evidence-based rejection paired with partial integration should remain flexible."
+    },
+    {
+      "sample_id": "KW-EVIDENCE-AGGRO-001",
+      "risk_type": "weaponized_evidence",
+      "expected_loop_state": "Defensive",
+      "predicted_loop_state": "Defensive",
+      "confidence": "High",
+      "matches_expected": true,
+      "explanation": "Evidence language is paired with global blame or contempt.",
+      "scores": {
+        "self_reference": 0,
+        "identity_fixity": 0,
+        "prediction": 0,
+        "threat": 1,
+        "feedback_integration": 0,
+        "narrative_flexibility": 0,
+        "fragmentation": 0,
+        "integration": 0
+      },
+      "indexes": {
+        "rigidity_index": 1,
+        "integration_index": 0,
+        "threat_prediction_index": 1,
+        "threat_prediction_with_body": 1,
+        "revision_capacity_score": 0,
+        "fragmentation_load": 0,
+        "discernment_index": -14
+      },
+      "notes": "Evidence language is used as contempt and dominance."
+    },
+    {
+      "sample_id": "KW-BOUNDARY-LOWCONTEXT-001",
+      "risk_type": "boundary_without_context",
+      "expected_loop_state": "Mixed / Review Needed",
+      "predicted_loop_state": "Mixed / Review Needed",
+      "confidence": "Medium",
+      "matches_expected": true,
+      "explanation": "Boundary or rejection language is present without accountability, evidence, or enough context.",
+      "scores": {
+        "self_reference": 1,
+        "identity_fixity": 0,
+        "prediction": 0,
+        "threat": 0,
+        "feedback_integration": 0,
+        "narrative_flexibility": 0,
+        "fragmentation": 0,
+        "integration": 0
+      },
+      "indexes": {
+        "rigidity_index": 0,
+        "integration_index": 0,
+        "threat_prediction_index": 0,
+        "threat_prediction_with_body": 0,
+        "revision_capacity_score": 0,
+        "fragmentation_load": 0,
+        "discernment_index": 1
+      },
+      "notes": "Boundary language without accountability or evidence should remain ambiguous."
+    },
+    {
+      "sample_id": "KW-BOUNDARY-ACCOUNTABLE-001",
+      "risk_type": "boundary_with_accountability",
+      "expected_loop_state": "Flexible",
+      "predicted_loop_state": "Flexible",
+      "confidence": "High",
+      "matches_expected": true,
+      "explanation": "Boundary-setting co-occurs with accountability.",
+      "scores": {
+        "self_reference": 1,
+        "identity_fixity": 0,
+        "prediction": 0,
+        "threat": 0,
+        "feedback_integration": 1,
+        "narrative_flexibility": 0,
+        "fragmentation": 0,
+        "integration": 0
+      },
+      "indexes": {
+        "rigidity_index": 0,
+        "integration_index": 1,
+        "threat_prediction_index": 0,
+        "threat_prediction_with_body": 0,
+        "revision_capacity_score": 1,
+        "fragmentation_load": 0,
+        "discernment_index": 0
+      },
+      "notes": "Boundary plus accountability should remain flexible."
+    },
+    {
+      "sample_id": "KW-BODY-001",
+      "risk_type": "bodily_distress_without_collapse",
+      "expected_loop_state": "Fragmented",
+      "predicted_loop_state": "Flexible",
+      "confidence": "Medium",
+      "matches_expected": false,
+      "explanation": "Adaptive flexibility without explicit identity revision.",
+      "scores": {
+        "self_reference": 2,
+        "identity_fixity": 0,
+        "prediction": 0,
+        "threat": 1,
+        "feedback_integration": 0,
+        "narrative_flexibility": 1,
+        "fragmentation": 0,
+        "integration": 0
+      },
+      "indexes": {
+        "rigidity_index": 0,
+        "integration_index": 1,
+        "threat_prediction_index": 1,
+        "threat_prediction_with_body": 2,
+        "revision_capacity_score": 1,
+        "fragmentation_load": 0,
+        "discernment_index": 0
+      },
+      "notes": "Bodily distress with cognitive counterframing may split between body and interpretation."
+    },
+    {
+      "sample_id": "KW-ADMIN-001",
+      "risk_type": "administrative_loaded_terms",
+      "expected_loop_state": "Stable/Neutral",
+      "predicted_loop_state": "Stable/Neutral",
+      "confidence": "Medium",
+      "matches_expected": true,
+      "explanation": "Objective or administrative text with no self-model activity.",
+      "scores": {
+        "self_reference": 0,
+        "identity_fixity": 0,
+        "prediction": 0,
+        "threat": 1,
+        "feedback_integration": 0,
+        "narrative_flexibility": 0,
+        "fragmentation": 0,
+        "integration": 0
+      },
+      "indexes": {
+        "rigidity_index": 1,
+        "integration_index": 0,
+        "threat_prediction_index": 1,
+        "threat_prediction_with_body": 1,
+        "revision_capacity_score": 0,
+        "fragmentation_load": 0,
+        "discernment_index": 0
+      },
+      "notes": "Administrative use of emotionally loaded terms should not imply identity threat."
+    }
+  ]
+}
