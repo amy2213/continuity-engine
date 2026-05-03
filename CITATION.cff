@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software or framework, please cite it as below."
+title: "Continuity Engine: A Rule-Based Narrative Analysis Framework"
+authors:
+  - family-names: "Laird"
+    given-names: "Amy"
+version: "0.4.1-alpha"
+date-released: "2026-05-03"
+license: "MIT"
+repository-code: "https://github.com/amy2213/continuity-engine"
+url: "https://amy2213.github.io/continuity-engine/"
+abstract: "A rule-based narrative analysis prototype implementing the Mid-Process Identity Loop framework."
+keywords:
+  - narrative analysis
+  - identity continuity
+  - rule-based classification
+  - computational social science
+  - inter-rater reliability

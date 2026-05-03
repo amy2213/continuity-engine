@@ -71,7 +71,7 @@ These categories influence scoring and classification but are not independently 
 
 ```
 continuity-engine/
-├── continuity_engine.py          # v0.4 classifier and Revision Latency tools
+├── continuity_engine.py          # v0.4.1 classifier and Revision Latency tools
 ├── sample_texts.json             # 60-sample labeled pilot dataset
 ├── test_adversarial.json         # 20-sample adversarial/edge-case test set
 ├── run_verification.py           # Verification runner (supports --dataset, --no-labels)
