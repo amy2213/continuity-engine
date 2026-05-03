@@ -1,6 +1,7 @@
 # Continuity Engine v0.4.1-alpha: A Rule-Based Prototype for Operationalizing the Mid-Process Identity Loop
 
-**Amy Laird**
+**Amy Laird**  
+ORCID: [0009-0001-5479-0007](https://orcid.org/0009-0001-5479-0007)
 
 Version: 0.1 preprint-style draft
 Repository: [amy2213/continuity-engine](https://github.com/amy2213/continuity-engine)
