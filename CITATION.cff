@@ -4,6 +4,7 @@ title: "Continuity Engine: A Rule-Based Narrative Analysis Framework"
 authors:
   - family-names: "Laird"
     given-names: "Amy"
+    orcid: "https://orcid.org/0009-0001-5479-0007"
 version: "0.4.1-alpha"
 date-released: "2026-05-03"
 license: "MIT"
