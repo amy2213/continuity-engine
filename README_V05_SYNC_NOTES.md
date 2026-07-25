@@ -1,1 +1,0 @@
-Temporary synchronization marker for README v0.5 documentation update. This file can be removed after README synchronization is merged.
