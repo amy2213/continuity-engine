@@ -9,6 +9,7 @@ A rule-based narrative analysis prototype implementing the Mid-Process Identity 
 **License:** MIT
 
 https://amy2213.github.io/continuity-engine/
+
 ---
 
 ## What This Is
@@ -20,6 +21,17 @@ It analyzes language patterns related to self-reference, identity fixity, predic
 It is **not** a diagnostic, therapeutic, or psychological assessment tool. It does not measure personality, mental health, competence, or character. It classifies textual patterns.
 
 The Mid-Process Identity Loop is an original framework by the author. It is not an established or externally validated psychological theory.
+
+### Research governance
+
+The repository now separates four layers that must not be conflated:
+
+- [`THEORY.md`](THEORY.md) — locked expanded theory baseline
+- [`MEASUREMENT_SPEC.md`](MEASUREMENT_SPEC.md) — human constructs versus current machine observables
+- [`QA_REPORT_2026-07-25.md`](QA_REPORT_2026-07-25.md) — full QA findings and issue ledger
+- [`ROADMAP_V0_5.md`](ROADMAP_V0_5.md) — research and implementation sequence for v0.5
+
+The v0.4.1-alpha classifier remains the operational baseline. The new theory documents do **not** retroactively claim that the current implementation already measures every expanded construct.
 
 ---
 
@@ -48,6 +60,12 @@ Text input
 | 7 | Fragmentation          | FR           | Competing self-models, internal splits   |
 | 8 | Updated Continuity     | UC           | Explicit identity revision with thread   |
 
+### Measurement warning
+
+The current v0.4.1-alpha software scores many dimensions by counting distinct matched regex patterns and capping at 3. The human rubric defines 0–3 semantically as absent, weak/implied, clear, and dominant/load-bearing. These are not yet operationally equivalent scales.
+
+For the locked construct-to-machine specification and required corrections, see [`MEASUREMENT_SPEC.md`](MEASUREMENT_SPEC.md).
+
 ### Auxiliary Marker Categories
 
 These categories influence scoring and classification but are not independently scored dimensions: bodily distress, sarcasm, rumination, boundary-setting, accountability, partial acceptance, context markers, weaponized evidence, ego-evidence ambiguity, third-person self-distance, feedback rejection, discernment, agency collapse, and unresolved resolution.
@@ -65,6 +83,37 @@ These categories influence scoring and classification but are not independently 
 | Stable/Neutral         | No meaningful identity activity                         |
 | Mixed / Review Needed  | Ambiguous, sarcastic, or insufficient for classification|
 
+These are classifications of textual processing configurations, not labels for people.
+
+---
+
+## Expanded Theory Baseline
+
+The theory baseline now formalizes identity as a continuity-constrained self-model that recursively incorporates new evidence.
+
+A conceptual representation is:
+
+```
+M_(t+1) = U(M_t, E_t, C_t)
+```
+
+where the revised self-model depends on the prior self-model, incoming evidence, and context.
+
+The expanded theory introduces research constructs including:
+
+- Revision Pressure
+- Revision Capacity
+- Evidence Weighting
+- Revision Depth
+- Revision Magnitude
+- Continuity Preservation
+
+It also introduces a transition-first hypothesis: the movement from one processing state to another may ultimately be more informative than isolated state classification.
+
+These are theory constructs and research hypotheses. They are **not yet additional machine-scored dimensions**.
+
+See [`THEORY.md`](THEORY.md) for the full locked formulation.
+
 ---
 
 ## File Structure
@@ -72,6 +121,10 @@ These categories influence scoring and classification but are not independently 
 ```
 continuity-engine/
 ├── continuity_engine.py          # v0.4.1 classifier and Revision Latency tools
+├── THEORY.md                     # locked expanded Mid-Process Identity Loop theory
+├── MEASUREMENT_SPEC.md           # construct-to-machine operationalization specification
+├── QA_REPORT_2026-07-25.md       # full QA issue ledger
+├── ROADMAP_V0_5.md               # validation-first v0.5 implementation roadmap
 ├── sample_texts.json             # 60-sample labeled pilot dataset
 ├── test_adversarial.json         # 20-sample adversarial/edge-case test set
 ├── run_verification.py           # Verification runner (supports --dataset, --no-labels)
@@ -137,6 +190,8 @@ print(doc["state_sequence"])
 print(doc["latency_metrics"]["recovery_arc"])
 ```
 
+The current Revision Latency implementation treats newline-separated paragraphs as analysis units. This is a practical proxy, not a validated definition of a narrative unit. The v0.5 roadmap includes correcting terminology and trajectory semantics.
+
 ---
 
 ## IRR Calculator
@@ -155,6 +210,8 @@ Writes `outputs/irr_summary.json` and `outputs/disagreement_review.csv`.
 sample_id,SR,IF,PR,TH,FI,NF,FR,UC,primary_state,secondary_state,confidence,notes
 ```
 
+The current IRR tooling is part of the research prototype. The QA report identifies required input-hardening work before formal validation, including strict state validation, range checks, duplicate-ID detection, and explicit missingness reporting.
+
 ---
 
 ## Validation Status
@@ -167,9 +224,9 @@ The adversarial test set (20 samples) achieves 100% accuracy against documented 
 
 **What is not proven:** That the classifier generalizes to unseen text. That human raters would agree with the labels. That the eight dimensions are valid constructs. That the tool works on real-world data.
 
-**Next required steps:** Inter-rater reliability study with 3+ independent raters. Held-out evaluation on text not used during development. Cross-domain testing.
+**Next required sequence:** Human construct reliability → construct refinement → frozen human-coded held-out set → engine evaluation → ablation → cross-domain testing.
 
-For planned validation work, see [Research Agenda](RESEARCH_AGENDA.md).
+For planned validation work, see [`RESEARCH_AGENDA.md`](RESEARCH_AGENDA.md) and [`ROADMAP_V0_5.md`](ROADMAP_V0_5.md).
 
 A held-out sample template is included for future validation design, but it does not contain validation data.
 
@@ -184,11 +241,14 @@ A held-out sample template is included for future validation design, but it does
 | Synthetic pilot dataset   | Does not demonstrate generalization                           |
 | Sarcasm weakness          | Only surface sarcasm patterns detected                        |
 | Negation weakness         | Limited negation handling; context-dependent                  |
+| Speaker attribution       | Quoted speech and multi-speaker text remain high-risk cases   |
+| Measurement alignment     | Machine score counts do not yet fully match human semantic anchors |
 | Short-text optimized      | Designed for 1–5 sentence samples; longer text less tested    |
+| Paragraph trajectory proxy| Paragraphs are formatting units, not validated narrative units |
 | Not diagnostic            | Labels describe text patterns, not people                     |
 | Unpublished theory        | Mid-Process Identity Loop is an original, unvalidated framework |
 
-For detailed edge cases, see [Known Failure Modes](KNOWN_FAILURE_MODES.md).
+For detailed edge cases, see [`KNOWN_FAILURE_MODES.md`](KNOWN_FAILURE_MODES.md) and the dated QA report.
 
 ---
 
@@ -252,8 +312,10 @@ Contributions welcome, especially:
 - Independent rater data for IRR validation
 - Bug reports and edge-case documentation
 
+Please do not submit changes that expand validation claims beyond the evidence currently available.
+
 ---
 
 ## Requirements
 
-Python 3.8+. No external dependencies. Standard library only.
+Python 3.8+. No external runtime dependencies. Standard library only.
